@@ -1,7 +1,7 @@
 
 ## project structure
 
-'''bash 
+``` 
 open_source_recommender/
 │
 ├── config/
@@ -53,3 +53,4 @@ open_source_recommender/
 ├── requirements.txt
 ├── README.md
 └── main.py                       # Entry point to run full pipeline
+```
