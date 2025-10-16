@@ -1,0 +1,13 @@
+github:
+  token: "YOUR_GITHUB_TOKEN"
+  max_repos: 500
+  search_topics: ["machine-learning", "data-science", "web"]
+  sort: "stars"
+  order: "desc"
+
+recommender:
+  vectorizer: "tfidf"
+  n_results: 10
+  filters:
+    min_stars: 50
+    updated_after: "2023-01-01"
