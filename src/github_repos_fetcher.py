@@ -1,5 +1,6 @@
 import requests
 import os
+import pandas as pd
 import time
 import yaml
 from dotenv import load_dotenv
@@ -84,4 +85,5 @@ def fetch_repositories(topics=None, languages=None):
     unique_repos = list({repo['full_name']: repo for repo in all_repos}.values())
     logger.info(f"Total unique repos collected: {len(unique_repos)}")
 
-    return unique_repos
+    df = pd.DataFrame(unique_repos)
+    return df
