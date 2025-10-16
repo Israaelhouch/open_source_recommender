@@ -1,7 +1,10 @@
 github:
   token: "YOUR_GITHUB_TOKEN"
-  max_repos: 500
+  max_repos: 10
+  per_page: 100
   search_topics: ["machine-learning", "data-science", "web"]
+  search_languages: ["Python", "JavaScript", "Go"]
+  rate_limit_wait: 1
   sort: "stars"
   order: "desc"
 

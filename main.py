@@ -1,28 +1,22 @@
-"""from src.api.github_client import fetch_repositories
-from src.data.data_cleaner import preprocess_data
-from src.recommender.matcher import recommend_projects"""
+# main.py
+import os
+import pandas as pd
+from src.api.github_client import fetch_repositories
+from src.data.data_cleaner import save_raw_data
 from src.utils.logger import setup_logger
 
 logger = setup_logger("main")
 
 def main():
-    logger.info("Starting recommendation system...")
+    logger.info("=== Starting GitHub Data Collection ===")
 
-    # Step 1: Fetch data
-    repos = fetch_repositories(topics=["machine-learning", "fastapi"])
-    
-    # Step 2: Clean and store
-    processed = preprocess_data(repos)
-    
-    # Step 3: Recommend based on sample input
-    user_skills = ["python", "fastapi", "nlp"]
-    recommendations = recommend_projects(user_skills, processed)
-    
-    # Step 4: Display
-    for r in recommendations[:5]:
-        logger.info(f"Recommended: {r['name']} - {r['url']} ({r['score']})")
+    # Fetch repositories
+    repos = fetch_repositories()
+
+    # Save to CSV
+    file_path = save_raw_data(repos)
+    logger.info(f"Saved {len(repos)} unique repositories in :{file_path}")
+    logger.info("=== GitHub Data Collection Completed ===")
 
 if __name__ == "__main__":
     main()
-
-
