@@ -5,10 +5,9 @@ from datetime import datetime
 def setup_logger(name: str = "recommender", log_dir: str = "logs"):
     """
     Creates and configures a logger.
-    Each run creates a new log file (e.g., logs/run_2025_10_09.log)
     """
     os.makedirs(log_dir, exist_ok=True)
-    log_filename = os.path.join(log_dir, f"run_{datetime.utcnow().strftime('%Y_%m_%d')}.log")
+    log_filename = os.path.join(log_dir, f"run_logs.log")
 
     # Configure the logger
     logger = logging.getLogger(name)

@@ -1,16 +1,22 @@
 github:
   token: "YOUR_GITHUB_TOKEN"
-  max_repos: 10
+  max_repos: 100
   per_page: 100
-  search_topics: ["machine-learning", "data-science", "web"]
-  search_languages: ["Python", "JavaScript", "Go"]
+  topics : [
+    "machine-learning", "deep-learning", "neural-networks", "computer-vision",
+    "nlp", "transformers", "reinforcement-learning", "generative-ai", "mlops",
+    "data-science", "data-visualization", "data-analysis", "big-data",
+    "django", "flask", "fastapi", "web-development", "api", "rest-api",
+    "automation", "web-scraping", "chatbot", "devops", "docker", "kubernetes",
+    "cloud", "aws", "gcp", "microservices", "finance", "healthcare", "education"
+  ]
+  languages : [
+    "Python", "JavaScript", "TypeScript", "Go", "Rust", "Java",
+    "C++", "C#", "Ruby", "PHP", "Swift", "Kotlin",
+    "R", "Julia", "Shell", "Scala", "Dart"
+  ]
   rate_limit_wait: 1
   sort: "stars"
   order: "desc"
+  min_stars: 50
 
-recommender:
-  vectorizer: "tfidf"
-  n_results: 10
-  filters:
-    min_stars: 50
-    updated_after: "2023-01-01"
