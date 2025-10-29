@@ -79,7 +79,7 @@ source venv/bin/activate    # On Windows: venv\Scripts\activate
 3. Install dependencies
 ``` bash
 pip install -r requirements.txt
-``` bash
+```
 
 ---
 
@@ -87,20 +87,14 @@ pip install -r requirements.txt
 - Run the Streamlit App
 ``` bash
 streamlit run streamlit_app.py
-``` 
+```
 - Then open your browser at http://localhost:8501
 
 ---
 
 ## Example
 Here's a look at the application in action:
-
-<div align="center">
-    <img src="assets/query_input_example.png" alt="Example of a natural language query" width="350" style="padding-right: 10px;">
-    <img src="assets/filters_sidebar.png" alt="Filters sidebar for language and topics" width="350">
-</div>
-
-<p align="center"><em>Demonstration of natural language querying and the comprehensive filtering options.</em></p>
+<p align="center"> <img src="assets/app_screenshot.png" alt="Open Source Project Recommender main interface with results" width="700"> </p> <p align="center"><em>The main recommendation view, displaying repository title, description, and metadata.</em></p>
 
 ---
 
