@@ -95,10 +95,13 @@ streamlit run streamlit_app.py
 ## Example
 Here's a look at the application in action:
 
-<p align="center"> <img src="assets/app_screenshot.png" alt="Open Source Project Recommender main interface with results" width="700"> </p> <p align="center"><em>The main recommendation view, displaying repository title, description, and metadata.</em></p>
+<div align="center">
+    <img src="assets/query_input_example.png" alt="Example of a natural language query" width="350" style="padding-right: 10px;">
+    
+    <img src="assets/filters_sidebar.png" alt="Filters sidebar for language and topics" width="350">
+</div>
 
-Query Input and Filters
-<p align="center"> <img src="assets/query_input_example.png" alt="Example of a natural language query" width="350"> <img src="assets/filters_sidebar.png" alt="Filters sidebar for language and topics" width="350"> </p> <p align="center"><em>Demonstration of natural language querying and the comprehensive filtering options.</em></p>
+<p align="center"><em>Demonstration of natural language querying and the comprehensive filtering options.</em></p>
 
 ---
 
