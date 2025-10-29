@@ -97,7 +97,6 @@ Here's a look at the application in action:
 
 <div align="center">
     <img src="assets/query_input_example.png" alt="Example of a natural language query" width="350" style="padding-right: 10px;">
-    
     <img src="assets/filters_sidebar.png" alt="Filters sidebar for language and topics" width="350">
 </div>
 
