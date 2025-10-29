@@ -101,4 +101,4 @@ Here's a look at the application in action:
 ## Credits
 Created and Maintained by: Israa Elhouch
 - **Contact**: issrach235@gmail.com
-- **$GitHub**: [github.com/israahch](https://github.com/israahch)
+- **GitHub**: [github.com/israahch](https://github.com/israahch)
