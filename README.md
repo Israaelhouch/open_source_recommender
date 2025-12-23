@@ -68,7 +68,7 @@ The Open Source Project Recommender is designed to empower developers and learne
 ## Installation
 1. Clone the repository
 ``` bash
-git clone https://github.com/<your-username>/open-source-recommender.git
+git clone https://github.com/Israaelhouch/open_source_recommender.git
 cd open-source-recommender
 ``` 
 2. Create a virtual environment
